@@ -1,3 +1,5 @@
+const validator = require('validator');
+
 const { name } = require('./utils');
 const { add, divide } = require('./math');
 
@@ -7,3 +9,5 @@ const divideResult = divide(4, 2);
 console.log(name);
 console.log(sumResult);
 console.log(divideResult);
+console.log(validator.isEmail('andre@gmail.com'));
+console.log(validator.isURL('http://www.globo.com'));
