@@ -1,4 +1,9 @@
-const fs = require('fs');
+const { name } = require('./utils');
+const { add, divide } = require('./math');
 
-fs.writeFileSync('notes.txt', 'my name is andre');
-fs.appendFileSync('notes.txt', '\nI live in Florianopolis');
+const sumResult = add(1, 2);
+const divideResult = divide(4, 2);
+
+console.log(name);
+console.log(sumResult);
+console.log(divideResult);
